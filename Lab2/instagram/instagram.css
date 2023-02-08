@@ -1,0 +1,117 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fafafa;
+  font-family: Helvetica;
+}
+#header {
+  background-color:  #fafafa;
+  height: 1em;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+#content1 {
+  background-color:  #fafafa;
+  height: 40em;
+  width: 50%;
+  float: left;
+}
+#content2 {
+  background-color:  #fafafa;
+  height: 40em;
+  width: 50%;
+  float: left;
+}
+#sidebar {
+  background-color:  #fafafa;
+  height: 10em;
+  float: bottom;
+  margin-top: 4em;
+}
+.inner-content {
+  background-color:  #fafafa;
+  height: 99%;
+  width: 99%;
+  position: relative;
+  float: right;
+}
+.inner-content1 {
+  background-color: #ffffff;
+  height: 75%;
+  width: 50%;
+  position: relative;
+  float: left;
+  margin-left: 1em;
+  align-content: center;
+  border: 1px solid #a4a4a4;
+}
+.image_phone {
+  position: relative;
+  width: 55%;
+  float: right;
+}
+.image_insta {
+  position: relative;
+  width: 55%;
+  float: top;
+  margin-top: 1em;
+}
+.center {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.form_pos {
+  position: relative;
+  float: top;
+  margin-top: 2em;
+  width: 70%;
+  height: 3em;
+}
+.button_vhod {
+  background-color: #00A5D2;
+  color: white;
+  border-color: #00A5D2;
+  border-radius: 6px;
+}
+.im {
+  width: 65%;
+}
+.im1 {
+  width: 55%;
+}
+.dont_have_acc {
+  background-color: #ffffff;
+  height: 10%;
+  width: 50%;
+  position: relative;
+  float: top;
+  margin-top: 31em;
+  margin-left: 1em;
+  border: 1px solid #a4a4a4;
+}
+.dont_have_acc1 {
+  background-color:  #fafafa;
+  height: 1%;
+  width: 50%;
+  position: relative;
+  float: top;
+  margin-left: 1em;
+}
+.urlsclear {
+  text-decoration: none;
+}
