@@ -1,0 +1,36 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+
+  <h3>
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+      {{ product.name }}
+    </a>
+  </h3>
+  <img src={{product.img_url}} style="height: 10em">
+  <div style="margin-top: 1em">
+    <a href={{product.url}}>Kaspi store</a>
+  </div>
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+  <div class="rating">
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5" title="5 звезд">5</label>
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4" title="4 звезды">4</label>
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3" title="3 звезды">3</label>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2" title="2 звезды">2</label>
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1" title="1 звезда">1</label>
+  </div>
+  <div>
+  <button type="button" (click)="share(product.url,product.name)">
+    Share in Telegram
+  </button>
+  </div>
+</div>
