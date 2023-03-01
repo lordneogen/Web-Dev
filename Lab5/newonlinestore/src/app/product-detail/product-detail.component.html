@@ -1,0 +1,25 @@
+
+<div class="detail">
+  <h2>Описание продукта</h2>
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <div>
+  <img src="{{product.img}}" style="width: 10em">
+  </div>
+  <div class="rating">
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5" title="5 звезд">5</label>
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4" title="4 звезды">4</label>
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3" title="3 звезды">3</label>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2" title="2 звезды">2</label>
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1" title="1 звезда">1</label>
+  </div>
+  <h4>{{ product.price}} тенге</h4>
+  <p>{{ product.description }}</p>
+  <button (click)="addToCart(product)">Купить</button>
+</div>
+</div>

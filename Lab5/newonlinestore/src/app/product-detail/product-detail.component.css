@@ -1,0 +1,13 @@
+.detail {
+  margin-left: 10%;
+  width: 50%;
+  font-family: Helvetica;
+}
+.detail button {
+  color: white;
+  background-color: indianred;
+  border-color: #bb3d3d;
+}
+.detail button:hover{
+  background-color: #bb3d3d;
+}

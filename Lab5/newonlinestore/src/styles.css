@@ -1,0 +1,26 @@
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  color: #bbb;
+}
+
+.rating label:before {
+  content: "\2605";
+  margin-right: 5px;
+}
+
+.rating input:checked ~ label {
+  color: #f90;
+}
+
+.rating:not(:checked) label:hover,
+.rating:not(:checked) label:hover ~ label {
+  color: #f90;
+}

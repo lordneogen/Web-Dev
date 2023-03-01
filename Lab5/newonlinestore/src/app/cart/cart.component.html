@@ -1,0 +1,29 @@
+<div class="cart">
+
+  <h3>Покупки</h3>
+
+  <div class="cart-item" *ngFor="let item of items">
+    <span>{{ item.name }} </span>
+    <span>{{ item.price}} тенге</span>
+  </div>
+
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+    <div class="v">
+      <label for="name">
+        Имя
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div class="v">
+      <label for="address">
+        Адрес
+      </label>
+      <input id="address" type="text" formControlName="address">
+    </div>
+
+    <button class="button" type="submit">Purchase</button>
+
+  </form>
+</div>

@@ -1,0 +1,50 @@
+.tool {
+  width: 100%;
+  background-color: indianred;
+  height: 4em;
+  font-family: Helvetica;
+  font-size: medium;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tool h1 {
+  color: #ffffff;
+}
+.br {
+  width: 100%;
+  background-color: darkred;
+  height: 0.1em;
+}
+.button {
+  width: 10%;
+  height: 70%;
+  border: 2px solid #da4c4c;
+  background-color: #bb3d3d;
+  color: white;
+  font-size: large;
+}
+.center {
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+.button:hover {
+  background-color: darkred;
+}
+.buy_icon {
+  width: 2em;
+  height: 2em;
+}
+.buy_icon:hover {
+  width: 2em;
+  height: 2em;
+  background-color:rgba(255,0,0,.1);
+}
+.buy_div {
+  position: fixed;
+  right: 3em;
+  bottom: 4em;
+  box-shadow: 2px 2px 2px 2px #bb3d3d;
+}

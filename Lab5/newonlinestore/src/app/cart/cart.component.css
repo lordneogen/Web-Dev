@@ -1,0 +1,30 @@
+.cart {
+  font-family: Helvetica;
+  margin-left: 10%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.cart button {
+  color: white;
+  background-color: indianred;
+  border-color: #bb3d3d;
+  margin-top: 2em;
+
+}
+.cart button:hover{
+  background-color: #bb3d3d;
+}
+.v {
+  width: 5em;
+}
+.v input {
+  width: 10em;
+  height: 3em;
+}
+.cart-item {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 4em;
+
+}

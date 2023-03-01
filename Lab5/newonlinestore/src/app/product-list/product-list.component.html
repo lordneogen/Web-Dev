@@ -1,0 +1,27 @@
+<div class="pl">
+  <div *ngFor="let product of products_phones">
+    <div *ngIf="product.type==products_type" class="product_num">
+    <h4>
+      <a
+        [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]">
+        {{ product.name }}
+      </a>
+    </h4>
+    <img src="{{product.img}}" class="im">
+      <p>
+        {{likeService.likes[product.id]}} лайков
+      </p>
+      <button (click)="likeService.editlike(product.id)">like</button>
+      <p>
+      {{product.description}}
+    </p>
+    <div>
+    <button (click)="addToCart(product)">Купить</button>
+      <button (click)="share(product.url,product.name)">Поделиться</button>
+      <button (click)="onNotify()">Напомнить</button>
+      <button (click)="openlink(product.url)">Открыть в Каспи</button>
+    </div>
+    </div>
+  </div>
+</div>

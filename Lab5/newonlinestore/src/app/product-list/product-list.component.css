@@ -1,0 +1,25 @@
+.pl {
+  margin-left: 10%;
+  font-family: Helvetica;
+  width: 50%;
+}
+.im {
+  width: 5em;
+}
+.product_num {
+  padding: 1em;
+  border: 2px solid indianred;
+}
+.pl button {
+  color: white;
+  background-color: indianred;
+  border-color: #bb3d3d;
+  margin-left: 1rem;
+}
+.pl button:hover{
+  background-color: #bb3d3d;
+}
+.pl a {
+  color: black;
+
+}
