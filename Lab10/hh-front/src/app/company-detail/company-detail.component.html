@@ -1,0 +1,10 @@
+<div *ngIf="vac">
+  <h2>Список вакансий:</h2>
+  <ul>
+    <li *ngFor="let vacancy of vac">
+      <h3>{{ vacancy.name }}</h3>
+      <p>{{ vacancy.description }}</p>
+      <p>Зарплата: {{ vacancy.salary }}</p>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,16 @@
+
+<h1>Компании</h1>
+<ul>
+  <li *ngFor="let company of companies">
+<!--    name=models.CharField(max_length=255,default='company')-->
+<!--    description=models.TextField(default='text_company')-->
+<!--    city=models.CharField(max_length=255,default='city')-->
+<!--    address=models.TextField(default='addres')-->
+    <a [title]="company.name + ' details'"
+       [routerLink]="[company.id]">
+      <h3>Имя- {{company.name}}</h3></a>
+    <p>Описание - {{company.description}}</p>
+    <p>Город - {{company.city}}</p>
+    <p>Адресс - {{company.address}}</p>
+  </li>
+</ul>
